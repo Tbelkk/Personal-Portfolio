@@ -1,0 +1,254 @@
+.particles-canvas{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.main-format{
+  max-width: 550px; 
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: transparent;
+}
+
+/* HEADER */
+
+header{
+  justify-content: left;
+}
+
+header ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.intro{
+  border: 1px, grey, solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header h1, h2, h3, p{
+  font-family: Monospace;
+}
+
+header p{
+  font-size: 16px;
+}
+header h1{
+  font-size: 30px;
+}
+
+header h3{
+  font-size: 20px;
+}
+
+.contact-btn{
+  text-decoration: none;
+  color: black;
+  font-family: monospace;
+  font-size: 16px;
+  transition: all .3s linear;
+}
+
+.contact-icon{
+  padding-right: 5px;
+}
+
+.contact-btn:hover{
+  color: #702963;
+  font-size: 18px;
+}
+
+.tech-container{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.tech-card p{
+  border: 1px, grey, solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tech-card p:hover{
+  color:#702963;
+  border: 1px solid #702963;
+  font-size: 22px;
+}
+
+.dark-mode-btn{
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  font-family: monospace;
+  font-size: 17px;
+  display: inline-block;
+}
+
+.dark-mode-btn:hover{
+  color: #702963;
+  border: 1px solid #702963;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  font-size: 19px;
+}
+
+
+.icon{
+  padding-right: 5px;
+}
+
+.dark-mode{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.skills{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.projects h2{
+  border: 1px, grey, solid;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  max-width: 140px;
+}
+
+/* PROJECTS */
+
+.projects h1, p, h2, h3{
+  font-family: monospace;
+}
+
+.projects h1{
+  border: 1px, grey, solid;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  max-width: 140px;
+}
+
+.projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5px;
+  justify-content: left;
+}
+
+.project-card{
+  border: 1px, grey, solid;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 243px;
+}
+
+.project-card:hover{
+  transform: translateY(-5px);
+}
+
+.project-image{
+  padding: 10px;
+}
+
+.resize{
+  width: 220px;
+  height: 100px;
+}
+
+.project-header{
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.project-card .tech-stack{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0px;
+  justify-content: center;
+}
+
+.project-card .tech-stack li{
+  border: 1px, grey, solid;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: monospace;
+}
+
+.project-card .project-link{
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  justify-content: center;
+}
+
+/* EXPERIENCE */
+
+.experience h1, h2, h3, p{
+  font-family: monospace;
+}
+
+.experience h1{
+  border: 1px, grey, solid;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  max-width: 150px;
+}
+
+
+/* FOOTER */
+
+.footer{
+  padding-top: 20px;
+}
+
+.footer ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
