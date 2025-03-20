@@ -1,3 +1,10 @@
+:root {
+  --text-color: white;
+  --card-bg: #00000033;
+  --highlight-color: #00FF00;
+  --border-color: grey;
+}
+
 .particles-canvas{
   z-index: -1;
   position: absolute;
@@ -6,10 +13,11 @@
 }
 
 .main-format{
-  max-width: 550px; 
+  max-width:700px; 
   margin: 0 auto;
   padding: 0 20px;
   background-color: transparent;
+  color: var(--text-color);
 }
 
 /* HEADER */
@@ -26,9 +34,9 @@ header ul{
 }
 
 .intro{
-  border: 1px, grey, solid;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--card-bg);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   padding-top: 10px;
@@ -53,7 +61,9 @@ header h3{
 
 .contact-btn{
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
+  background-color: transparent;
+  border-color: transparent;
   font-family: monospace;
   font-size: 16px;
   transition: all .3s linear;
@@ -64,7 +74,7 @@ header h3{
 }
 
 .contact-btn:hover{
-  color: #702963;
+  color: var(--highlight-color);
   font-size: 18px;
 }
 
@@ -75,12 +85,11 @@ header h3{
 }
 
 .tech-card p{
-  border: 1px, grey, solid;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--card-bg);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  border: 1px solid grey;
   border-radius: 5px;
   padding: 10px;
   font-size: 15px;
@@ -88,20 +97,20 @@ header h3{
 }
 
 .tech-card p:hover{
-  color:#702963;
-  border: 1px solid #702963;
+  color: var(--highlight-color);
+  border: 1px solid var(--highlight-color);
   font-size: 22px;
 }
 
 .dark-mode-btn{
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--card-bg);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  border: 1px solid grey;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 5px 10px;
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   transition: all 0.3s ease-in-out;
   font-family: monospace;
   font-size: 17px;
@@ -109,14 +118,13 @@ header h3{
 }
 
 .dark-mode-btn:hover{
-  color: #702963;
-  border: 1px solid #702963;
-  background: rgba(255, 255, 255, 0.2);
+  color: var(--highlight-color);
+  border: 1px solid var(--highlight-color);
+  background: var(--card-bg);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   font-size: 19px;
 }
-
 
 .icon{
   padding-right: 5px;
@@ -133,9 +141,9 @@ header h3{
 }
 
 .projects h2{
-  border: 1px, grey, solid;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--card-bg);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   padding: 5px;
@@ -149,9 +157,9 @@ header h3{
 }
 
 .projects h1{
-  border: 1px, grey, solid;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--card-bg);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   padding: 5px;
@@ -163,19 +171,20 @@ header h3{
   flex-wrap: wrap;
   gap: 10px;
   padding: 5px;
-  justify-content: left;
+  justify-content: center;
 }
 
 .project-card{
-  border: 1px, grey, solid;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--card-bg);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   padding: 10px;
   text-align: center;
   width: 100%;
-  max-width: 243px;
+  max-width: 318px;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover{
@@ -187,8 +196,8 @@ header h3{
 }
 
 .resize{
-  width: 220px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
 }
 
 .project-header{
@@ -207,7 +216,7 @@ header h3{
 }
 
 .project-card .tech-stack li{
-  border: 1px, grey, solid;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 5px;
   font-family: monospace;
@@ -227,28 +236,16 @@ header h3{
 }
 
 .experience h1{
-  border: 1px, grey, solid;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--card-bg);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   padding: 5px;
   max-width: 150px;
 }
 
-
-/* FOOTER */
-
-.footer{
+.experience{
   padding-top: 20px;
-}
-
-.footer ul{
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding-left: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }

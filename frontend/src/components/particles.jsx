@@ -2,9 +2,9 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim"; 
 
-const ParticlesComponent = (props) => {
-
+const ParticlesComponent = ({ darkMode }) => {
   const [init, setInit] = useState(false);
+  
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
@@ -17,12 +17,11 @@ const ParticlesComponent = (props) => {
     console.log(container);
   };
 
-
   const options = useMemo(
     () => ({
       background: {
         color: {
-          value: "black",
+          value: darkMode ? "#000000" : "#ffffff",
         },
       },
       fpsLimit: 120,
@@ -49,10 +48,10 @@ const ParticlesComponent = (props) => {
       },
       particles: {
         color: {
-          value: "#702963",
+          value: darkMode ? "#00FF00" : "#702963",
         },
         links: {
-          color: "#702963",
+          color: darkMode ? "#00FF00" : "#702963",
           distance: 150,
           enable: true,
           opacity: 0.3,
@@ -86,11 +85,21 @@ const ParticlesComponent = (props) => {
       },
       detectRetina: true,
     }),
-    [],
+    [darkMode],
   );
 
-
-  return <Particles id={props.id} init={particlesLoaded} options={options} />; 
+  if (init) {
+    return (
+      <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={options}
+        className="particles-canvas"
+      />
+    );
+  }
+  
+  return null;
 };
 
 export default ParticlesComponent;

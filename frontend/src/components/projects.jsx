@@ -32,6 +32,30 @@ function Projects(){
                     <div className="tech-card">
                         <p>Java</p>
                     </div>
+                    <div className="tech-card">
+                        <p>Git</p>
+                    </div>
+                    <div className="tech-card">
+                        <p>Github</p>
+                    </div>
+                    <div className="tech-card">
+                        <p>NodeJS</p>
+                    </div>
+                    <div className="tech-card">
+                        <p>ExpressJS</p>
+                    </div>
+                    <div className="tech-card">
+                        <p>Firebase</p>
+                    </div>
+                    <div className="tech-card">
+                        <p>SciKitLearn</p>
+                    </div>
+                    <div className="tech-card">
+                        <p>TensorFlow</p>
+                    </div>
+                    <div className="tech-card">
+                        <p>OpenCV</p>
+                    </div>
                 </div>
             </div>
             <h1>Projects</h1>
