@@ -1,17 +1,28 @@
+import { useState } from "react";
+
 function Experience(){
-      return (
+
+        const [experienceBtn, setExperienceBtn] = useState(true);
+
+        if(experienceBtn){
+
+        }
+
+        return (
         <div className="experience">
             <h1>Experience</h1>
             <div className="toggle">
-                <button className="experience-btn">Experience</button>
-                <button className="education-btn">Education</button>
+                <button className={experienceBtn ? "experience-btn-active" : "experience-btn"} onClick={() => setExperienceBtn(true)}>Experience</button>
+                <button className={experienceBtn ? "education-btn" : "education-btn-active"} onClick={() => setExperienceBtn(false)}>Education</button>
             </div>
             <div className="timeline-container">
-                <div className="timeline-experience">
+                {experienceBtn && (
+                    <>
+                    <div className="timeline-experience">
                     <div className="experience-card">
                         <div className="dot-pad">
                             <div className="timeline-dot">
-                                <img src="./public/dfr.jpg"></img>
+                                <img src="/dfr.jpg"></img>
                             </div>
                         </div>
                         <div className="timeline-content">
@@ -25,7 +36,7 @@ function Experience(){
                     <div className="experience-card">
                     <div className="dot-pad">
                             <div className="timeline-dot">
-                                <img src="./public/acm.jpg"></img>
+                                <img src="/acm.jpg"></img>
                             </div>
                         </div>
                         <div className="timeline-content">
@@ -37,9 +48,9 @@ function Experience(){
                 </div>
                 <div className="timeline-experience">
                     <div className="experience-card">
-                    <div className="dot-pad">
+                        <div className="dot-pad">
                             <div className="timeline-dot">
-                                <img src="./public/moving.webp"></img>
+                                <img src="/moving.webp"></img>
                             </div>
                         </div>
                         <div className="timeline-content">
@@ -49,9 +60,26 @@ function Experience(){
                         </div>
                     </div>
                 </div>
-                <div className="timeline-education">
-                    
-                </div>
+                </>
+                )}
+                {!experienceBtn && (
+                <>
+                    <div className="timeline-education">
+                        <div className="education-card">
+                            <div className="dot-pad">
+                                <div className="timeline-dot">
+                                    <img src="/utd.PNG"></img>
+                                </div>
+                            </div>
+                            <div className="timeline-content">
+                                <p>Expected Graduation - May 2028</p>
+                                <h2>University Of Texas at Dallas</h2>
+                                <p>Bachelor of Science in Computer Science</p>
+                            </div>
+                        </div>
+                    </div>
+                </>
+                )}
             </div>
         </div>
     );

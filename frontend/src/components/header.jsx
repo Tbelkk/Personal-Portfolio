@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon, faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 function Header({ darkMode, setDarkMode }) {
   useEffect(() => {

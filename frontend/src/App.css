@@ -31,6 +31,7 @@ header ul{
   display: flex;
   gap: 20px;
   padding: 20px;
+  padding-left: 0px;
 }
 
 .intro{
@@ -154,6 +155,10 @@ header h3{
 
 .projects h1, p, h2, h3{
   font-family: monospace;
+}
+
+.projects{
+  padding-bottom: 50px;
 }
 
 .projects h1{
@@ -281,6 +286,17 @@ header h3{
   color: var(--highlight-color);
 }
 
+.experience-btn-active{
+  border: 1px solid var(--highlight-color);
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  width: 50%;
+  color: var(--highlight-color);
+}
+
 .education-btn{
   border: 1px solid var(--border-color);
   border-radius: 10px;
@@ -295,6 +311,17 @@ header h3{
 
 .education-btn:hover{
   border: 1px solid var(--highlight-color);
+  color: var(--highlight-color);
+}
+
+.education-btn-active{
+  border: 1px solid var(--highlight-color);
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  width: 50%;
   color: var(--highlight-color);
 }
 
@@ -342,4 +369,24 @@ header h3{
 
 .dot-pad{
   padding-left: 10px;
+}
+
+.commit{
+  width: 200px;
+}
+
+.timeline-education::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: var(--border-color);
+  z-index: -1;
+  left: 41px;
+}
+
+.education-card{
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
