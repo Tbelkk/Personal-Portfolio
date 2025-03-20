@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with React, Vite, and particle.js.
 
-- Deployed at [Portfolio]([www.google.com](https://tbelkk.github.io/Personal-Portfolio/))
+- Deployed at [Portfolio](https://tbelkk.github.io/Personal-Portfolio/)
 
 ## 📋 Overview
 
