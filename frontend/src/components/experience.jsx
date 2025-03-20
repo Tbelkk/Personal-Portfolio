@@ -22,7 +22,7 @@ function Experience(){
                     <div className="experience-card">
                         <div className="dot-pad">
                             <div className="timeline-dot">
-                                <img src="/dfr.jpg"></img>
+                                <img src="/Personal-Portfolio/dfr.jpg"></img>
                             </div>
                         </div>
                         <div className="timeline-content">
@@ -36,7 +36,7 @@ function Experience(){
                     <div className="experience-card">
                     <div className="dot-pad">
                             <div className="timeline-dot">
-                                <img src="/acm.jpg"></img>
+                                <img src="/Personal-Portfolio/acm.jpg"></img>
                             </div>
                         </div>
                         <div className="timeline-content">
@@ -50,7 +50,7 @@ function Experience(){
                     <div className="experience-card">
                         <div className="dot-pad">
                             <div className="timeline-dot">
-                                <img src="/moving.webp"></img>
+                                <img src="/Personal-Portfolio/moving.webp"></img>
                             </div>
                         </div>
                         <div className="timeline-content">
@@ -68,7 +68,7 @@ function Experience(){
                         <div className="education-card">
                             <div className="dot-pad">
                                 <div className="timeline-dot">
-                                    <img src="/utd.PNG"></img>
+                                    <img src="/Personal-Portfolio/utd.PNG"></img>
                                 </div>
                             </div>
                             <div className="timeline-content">

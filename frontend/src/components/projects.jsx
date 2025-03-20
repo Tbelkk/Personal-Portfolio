@@ -62,7 +62,7 @@ function Projects(){
             <div className="projects-container">
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="./public/clipcheck.png" alt="Personal Portfolio" className="resize"></img>
+                        <img src="/Personal-Portfolio/clipcheck.PNG" alt="Personal Portfolio" className="resize"></img>
                     </div>
                     <div className="project-header">
                         <h3>ClipCheck</h3>
@@ -100,7 +100,7 @@ function Projects(){
                 </div>
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="/voice.jpeg" alt="Personal Portfolio" className="resize"></img>
+                        <img src="/Personal-Portfolio/voice.jpeg" alt="Personal Portfolio" className="resize"></img>
                     </div>
                     <div className="project-header">
                         <h3>Virtual Voice Assistant</h3>
@@ -141,7 +141,7 @@ function Projects(){
                 </div>
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="./public/Commit.png" alt="Personal Portfolio" className="resize commit"></img>
+                        <img src="/Personal-Portfolio/Commit.png" alt="Personal Portfolio" className="resize commit"></img>
                     </div>
                     <div className="project-header">
                         <h3>Commit Analyzer</h3>
@@ -183,7 +183,7 @@ function Projects(){
                 </div>
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="./portfolio.png" alt="Personal Portfolio" className="resize"></img>
+                        <img src="/Personal-Portfolio/portfolio.png" alt="Personal Portfolio" className="resize"></img>
                     </div>
                     <div className="project-header">
                         <h3>Personal Portfolio</h3>
