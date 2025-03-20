@@ -62,7 +62,7 @@ function Projects(){
             <div className="projects-container">
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="./portfolio.png" alt="Personal Portfolio" className="resize"></img>
+                        <img src="./public/clipcheck.png" alt="Personal Portfolio" className="resize"></img>
                     </div>
                     <div className="project-header">
                         <h3>ClipCheck</h3>
@@ -98,7 +98,7 @@ function Projects(){
                         <img src="./portfolio.png" alt="Personal Portfolio" className="resize"></img>
                     </div>
                     <div className="project-header">
-                        <h3>Personal</h3>
+                        <h3>Virtual Voice Assistant</h3>
                         <p>fsjehfejfef esjfsjf esfhsejf sfsjh fjs hfjshfsjf hjsfh jse</p>
                     </div>
                     <div className="project-footer">
