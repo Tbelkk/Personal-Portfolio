@@ -65,7 +65,7 @@ function Projects(){
                         <img src="./portfolio.png" alt="Personal Portfolio" className="resize"></img>
                     </div>
                     <div className="project-header">
-                        <h3>Personal Portfolio</h3>
+                        <h3>ClipCheck</h3>
                         <p>fsjehfejfef esjfsjf esfhsejf sfsjh fjs hfjshfsjf hjsfh jse</p>
                     </div>
                     <div className="project-footer">
@@ -77,7 +77,10 @@ function Projects(){
                                 ReactJS
                             </li>
                             <li>
-                                CSS
+                                NodeJS
+                            </li>
+                            <li>
+                                ExpressJS
                             </li>
                         </ul>
                         <ul className="project-link">
@@ -95,7 +98,7 @@ function Projects(){
                         <img src="./portfolio.png" alt="Personal Portfolio" className="resize"></img>
                     </div>
                     <div className="project-header">
-                        <h3>Personal Portfolio</h3>
+                        <h3>Personal</h3>
                         <p>fsjehfejfef esjfsjf esfhsejf sfsjh fjs hfjshfsjf hjsfh jse</p>
                     </div>
                     <div className="project-footer">

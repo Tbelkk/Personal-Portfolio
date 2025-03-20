@@ -248,4 +248,98 @@ header h3{
 .experience{
   padding-top: 20px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toggle{
+  display: flex;
+  gap: 3px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+}
+
+.experience-btn{
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  width: 50%;
+  color: var(--text-color);
+  transition: all .6s ease-in-out;
+}
+
+.experience-btn:hover{
+  border: 1px solid var(--highlight-color);
+  color: var(--highlight-color);
+}
+
+.education-btn{
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  width: 50%;
+  color: var(--text-color);
+  transition: all .6s ease-in-out;
+}
+
+.education-btn:hover{
+  border: 1px solid var(--highlight-color);
+  color: var(--highlight-color);
+}
+
+.timeline-container{
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.timeline-experience::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: var(--border-color);
+  z-index: -1;
+  left: 41px;
+}
+
+.timeline-dot {
+  width: 50px;
+  height: 50px;
+  background-color: var(--border-color); 
+  border-radius: 50%;
+  border: 3px solid #fff; 
+  overflow: hidden;
+}
+
+.timeline-dot img{
+  width: 50px;
+}
+
+.experience-card{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.dot-pad{
+  padding-left: 10px;
 }
